@@ -26,7 +26,7 @@
       z-index: 0;
     }
 
-    /* Overlay dark layer for readability */
+    /* Overlay for readability */
     .dark-overlay::before {
       content: '';
       position: absolute;
@@ -156,93 +156,46 @@
       </div>
 
       <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <template id="product-card"></template>
 
-        <!-- Product 1 -->
         <div class="bg-white bg-opacity-95 rounded-lg overflow-hidden shadow hover:shadow-lg transition text-blue-800">
-          <div class="flex justify-center bg-gray-100 h-48">
-            <img src="product1.jpg" alt="Rollac Discs" class="object-contain max-h-44 product-img" />
-          </div>
-          <div class="p-4">
-            <h4 class="font-semibold">Rollac Discs</h4>
-            <p class="text-sm mt-1">Provide exceptional grinding, deburring, and blending flexibility with a twist-on/off fastening system.</p>
-          </div>
+          <div class="flex justify-center bg-gray-100 h-48"><img src="product1.jpg" alt="Rollac Discs" class="object-contain max-h-44 product-img" /></div>
+          <div class="p-4"><h4 class="font-semibold">Rollac Discs</h4><p class="text-sm mt-1">Provide exceptional grinding, deburring, and blending flexibility with a twist-on/off fastening system.</p></div>
         </div>
 
-        <!-- Product 2 -->
         <div class="bg-white bg-opacity-95 rounded-lg overflow-hidden shadow hover:shadow-lg transition text-blue-800">
-          <div class="flex justify-center bg-gray-100 h-48">
-            <img src="product2.jpg" alt="Abrasive Belts" class="object-contain max-h-44 product-img" />
-          </div>
-          <div class="p-4">
-            <h4 class="font-semibold">Abrasive Belts</h4>
-            <p class="text-sm mt-1">High-performance Aluminium Oxide, Zirconium, and Silicon Carbide belts for grinding, sanding, and finishing.</p>
-          </div>
+          <div class="flex justify-center bg-gray-100 h-48"><img src="product2.jpg" alt="Abrasive Belts" class="object-contain max-h-44 product-img" /></div>
+          <div class="p-4"><h4 class="font-semibold">Abrasive Belts</h4><p class="text-sm mt-1">High-performance Aluminium Oxide, Zirconium, and Silicon Carbide belts for grinding, sanding, and finishing.</p></div>
         </div>
 
-        <!-- Product 3 -->
         <div class="bg-white bg-opacity-95 rounded-lg overflow-hidden shadow hover:shadow-lg transition text-blue-800">
-          <div class="flex justify-center bg-gray-100 h-48">
-            <img src="product3.jpg" alt="Sanding Discs" class="object-contain max-h-44 product-img" />
-          </div>
-          <div class="p-4">
-            <h4 class="font-semibold">Sanding Discs</h4>
-            <p class="text-sm mt-1">Designed for stock removal and de-burring using angle grinders for smooth finishes.</p>
-          </div>
+          <div class="flex justify-center bg-gray-100 h-48"><img src="product3.jpg" alt="Sanding Discs" class="object-contain max-h-44 product-img" /></div>
+          <div class="p-4"><h4 class="font-semibold">Sanding Discs</h4><p class="text-sm mt-1">Designed for stock removal and de-burring using angle grinders for smooth finishes.</p></div>
         </div>
 
-        <!-- Product 4 -->
         <div class="bg-white bg-opacity-95 rounded-lg overflow-hidden shadow hover:shadow-lg transition text-blue-800">
-          <div class="flex justify-center bg-gray-100 h-48">
-            <img src="product4.jpg" alt="Flap Discs" class="object-contain max-h-44 product-img" />
-          </div>
-          <div class="p-4">
-            <h4 class="font-semibold">Flap Discs</h4>
-            <p class="text-sm mt-1">Long-lasting discs offering high stock removal performance with consistent finishing results.</p>
-          </div>
+          <div class="flex justify-center bg-gray-100 h-48"><img src="product4.jpg" alt="Flap Discs" class="object-contain max-h-44 product-img" /></div>
+          <div class="p-4"><h4 class="font-semibold">Flap Discs</h4><p class="text-sm mt-1">Long-lasting discs offering high stock removal performance with consistent finishing results.</p></div>
         </div>
 
-        <!-- Product 5 -->
         <div class="bg-white bg-opacity-95 rounded-lg overflow-hidden shadow hover:shadow-lg transition text-blue-800">
-          <div class="flex justify-center bg-gray-100 h-48">
-            <img src="product5.jpg" alt="Velcro Discs" class="object-contain max-h-44 product-img" />
-          </div>
-          <div class="p-4">
-            <h4 class="font-semibold">Velcro Discs</h4>
-            <p class="text-sm mt-1">Ideal for light stripping, sanding, and finishing on wood, metal, and FRP surfaces.</p>
-          </div>
+          <div class="flex justify-center bg-gray-100 h-48"><img src="product5.jpg" alt="Velcro Discs" class="object-contain max-h-44 product-img" /></div>
+          <div class="p-4"><h4 class="font-semibold">Velcro Discs</h4><p class="text-sm mt-1">Ideal for light stripping, sanding, and finishing on wood, metal, and FRP surfaces.</p></div>
         </div>
 
-        <!-- Product 6 -->
         <div class="bg-white bg-opacity-95 rounded-lg overflow-hidden shadow hover:shadow-lg transition text-blue-800">
-          <div class="flex justify-center bg-gray-100 h-48">
-            <img src="product6.jpg" alt="Flap Wheels & Spindle Mops" class="object-contain max-h-44 product-img" />
-          </div>
-          <div class="p-4">
-            <h4 class="font-semibold">Flap Wheels & Spindle Mops</h4>
-            <p class="text-sm mt-1">Perfect for blending, deburring, and finishing metal surfaces and complex shapes.</p>
-          </div>
+          <div class="flex justify-center bg-gray-100 h-48"><img src="product6.jpg" alt="Flap Wheels & Spindle Mops" class="object-contain max-h-44 product-img" /></div>
+          <div class="p-4"><h4 class="font-semibold">Flap Wheels & Spindle Mops</h4><p class="text-sm mt-1">Perfect for blending, deburring, and finishing metal surfaces and complex shapes.</p></div>
         </div>
 
-        <!-- Product 7 -->
         <div class="bg-white bg-opacity-95 rounded-lg overflow-hidden shadow hover:shadow-lg transition text-blue-800">
-          <div class="flex justify-center bg-gray-100 h-48">
-            <img src="product7.jpg" alt="Speed Lok Discs" class="object-contain max-h-44 product-img" />
-          </div>
-          <div class="p-4">
-            <h4 class="font-semibold">Speed Lok Discs</h4>
-            <p class="text-sm mt-1">For blending, finishing, rust or paint removal, deburring, and mold cleanup applications.</p>
-          </div>
+          <div class="flex justify-center bg-gray-100 h-48"><img src="product7.jpg" alt="Speed Lok Discs" class="object-contain max-h-44 product-img" /></div>
+          <div class="p-4"><h4 class="font-semibold">Speed Lok Discs</h4><p class="text-sm mt-1">For blending, finishing, rust or paint removal, deburring, and mold cleanup applications.</p></div>
         </div>
 
-        <!-- Product 8 -->
         <div class="bg-white bg-opacity-95 rounded-lg overflow-hidden shadow hover:shadow-lg transition text-blue-800">
-          <div class="flex justify-center bg-gray-100 h-48">
-            <img src="product8.jpg" alt="Cutting Wheels" class="object-contain max-h-44 product-img" />
-          </div>
-          <div class="p-4">
-            <h4 class="font-semibold">Cutting Wheels</h4>
-            <p class="text-sm mt-1">Precision cutting wheels built for durability and smooth industrial performance.</p>
-          </div>
+          <div class="flex justify-center bg-gray-100 h-48"><img src="product8.jpg" alt="Cutting Wheels" class="object-contain max-h-44 product-img" /></div>
+          <div class="p-4"><h4 class="font-semibold">Cutting Wheels</h4><p class="text-sm mt-1">Precision cutting wheels built for durability and smooth industrial performance.</p></div>
         </div>
 
       </div>
@@ -259,10 +212,20 @@
   </footer>
 
   <!-- WhatsApp Floating Button -->
-  <a href="https://web.whatsapp.com/send?phone=919790191263&text=Hello%20Sahkthi%20Enterprises!%20I%20would%20like%20to%20know%20more%20about%20your%20products."
-     class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+  <a id="whatsapp-link" href="#" class="whatsapp-float" title="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
+
+  <script>
+    // Detect device type and route WhatsApp accordingly
+    const phoneNumber = "919790191263";
+    const message = encodeURIComponent("Hello Sahkthi Enterprises! I would like to know more about your products.");
+    const isMobile = /Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
+    const whatsappLink = document.getElementById("whatsapp-link");
+    whatsappLink.href = isMobile
+      ? `https://wa.me/${phoneNumber}?text=${message}` // Mobile App
+      : `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`; // Desktop Web
+  </script>
 
 </body>
 </html>
